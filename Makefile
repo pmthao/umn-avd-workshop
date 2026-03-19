@@ -6,20 +6,20 @@ help: ## Display help message
 # AOC
 ########################################################
 
-.PHONY: build-site-1
-build-site-1: ## Build Configs
+.PHONY: AOC-build
+AOC-build: ## Build Configs
 	ansible-playbook playbooks/build.yml -i sites/AOC/inventory.yml -e "target_hosts=AOC_FABRIC"
 
-.PHONY: deploy-site-1
-deploy-site-1: ## Deploy Configs via eAPI
-	ansible-playbook playbooks/deploy.yml -i sites/AOC/inventory.yml -e "target_hosts=AOC_FABRIC"
+# .PHONY: AOC-deploy
+# AOC-deploy: ## Deploy Configs via eAPI
+# 	ansible-playbook playbooks/deploy.yml -i sites/AOC/inventory.yml -e "target_hosts=AOC_FABRIC"
 
-.PHONY: cvp-site-1
-cvp-site-1: ## Deploy Configs via CloudVision Static Configuration Studio
+.PHONY: AOC-CVP-deploy
+AOC-CVP-deploy: ## Deploy Configs via CloudVision Static Configuration Studio
 	ansible-playbook playbooks/cvp.yml -i sites/AOC/inventory.yml -e "target_hosts=AOC_FABRIC"
 
-.PHONY: validate-site-1
-validate-site-1: ## Validate network state
+.PHONY: AOC-validate
+AOC-validate: ## Validate network state
 	ansible-playbook playbooks/validate.yml -i sites/AOC/inventory.yml -e "target_hosts=AOC_FABRIC"
 
 ########################################################

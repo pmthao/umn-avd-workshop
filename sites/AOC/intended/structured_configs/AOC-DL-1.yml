@@ -71,7 +71,7 @@ local_users:
 - name: arista
   privilege: 15
   role: network-admin
-  sha512_password: $6$1cDxnkYE//MKY4BW$V6ZGNWAfol0Jd45nXHRbw7NP2JnfmC.SJ7obpvO4wVaUPm8MroL2SU7PSXH6g3e55Lci1t8CFFfGdlC/6D5tK0
+  sha512_password: $6$arista$mcKyeXDkkPyfrOknloqvxadn6HAGCPUjW/LzqS3VwkMYGaH/rRF9ctmhgR13hLzpf6IPsrRLMHeSc9T79.CMW1
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsdGKhHRAYdmh483jfUT6LeB61NR8eYb41pOstGJIgKtrrCS8ocEyAYqA0Dd7c+6hO9Q1L8ubRqgPFQeEalm+tYKHYJ810Mg7e8BxHa2wvtbY67T4dxM5Jn8q5IpF+1xzXS41vy8kfczNBMAUobbLtCcFk5DNFrA4pSb3EUcdIwYX4jTNVv6WcVFqEOB6DrBx2z3aRLipg4vUbL3sfz2IOIk4GY2KiWhjSl3OJnrq5rKi4ZelBwXqFv4Vstv7NflKJNpvl4BLyaIy4NnCQkijRMlgHOr6Gtzk2wQHUbFmjKJkHKf5fGp7QExFFEaO6MsgoSIgOv5r6+gZSNHEeoSNV
     arista@umn-2-1-b389d979-eos
 loopback_interfaces:
