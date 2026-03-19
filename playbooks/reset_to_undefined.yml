@@ -5,63 +5,54 @@
 
   vars:
     CVP_DEVICES:
-      - serialNumber: s1-core1
+      - fqdn: s1-core1
         parentContainerName: ""
-      - serialNumber: s1-core2
+      - fqdn: s1-core2
         parentContainerName: ""
-      - serialNumber: s1-brdr1
+      - fqdn: s1-brdr1
         parentContainerName: ""
-      - serialNumber: s1-brdr2
+      - fqdn: s1-brdr2
         parentContainerName: ""
-      - serialNumber: s1-leaf1
+      - fqdn: s1-leaf1
         parentContainerName: ""
-      - serialNumber: s1-leaf2
+      - fqdn: s1-leaf2
         parentContainerName: ""
-      - serialNumber: s1-leaf3
+      - fqdn: s1-leaf3
         parentContainerName: ""
-      - serialNumber: s1-leaf4
+      - fqdn: s1-leaf4
         parentContainerName: ""
-      - serialNumber: s1-spine1
+      - fqdn: s1-spine1
         parentContainerName: ""
-      - serialNumber: s1-spine2
+      - fqdn: s1-spine2
         parentContainerName: ""
-      - serialNumber: s1-host1
+      - fqdn: s1-host1
         parentContainerName: ""
-      - serialNumber: s1-host2
+      - fqdn: s1-host2
         parentContainerName: ""
-      - serialNumber: s2-core1
+      - fqdn: s2-core1
         parentContainerName: ""
-      - serialNumber: s2-core2
+      - fqdn: s2-core2
         parentContainerName: ""
-      - serialNumber: s2-brdr1
+      - fqdn: s2-brdr1
         parentContainerName: ""
-      - serialNumber: s2-brdr2
+      - fqdn: s2-brdr2
         parentContainerName: ""
-      - serialNumber: s2-leaf1
+      - fqdn: s2-leaf1
         parentContainerName: ""
-      - serialNumber: s2-leaf2
+      - fqdn: s2-leaf2
         parentContainerName: ""
-      - serialNumber: s2-leaf3
+      - fqdn: s2-leaf3
         parentContainerName: ""
-      - serialNumber: s2-leaf4
+      - fqdn: s2-leaf4
         parentContainerName: ""
-      - serialNumber: s2-spine1
+      - fqdn: s2-spine1
         parentContainerName: ""
-      - serialNumber: s2-spine2
+      - fqdn: s2-spine2
         parentContainerName: ""
-      - serialNumber: s2-host1
+      - fqdn: s2-host1
         parentContainerName: ""
-      - serialNumber: s2-host2
+      - fqdn: s2-host2
         parentContainerName: ""
-
-      # - fqdn: TelecomB-DV-1
-      #   parentContainerName: ""
-      # - fqdn: TelecomB-DV-2
-      #   parentContainerName: ""
-      # - fqdn: TelecomB-HOST-1
-      #   parentContainerName: ""
-      # - fqdn: TelecomB-HOST-2
-      #   parentContainerName: ""
 
   tasks:
 
@@ -70,7 +61,7 @@
       with_items:
         - "../global_vars/global_dc_vars.yml"
 
-    - name: remove device
+    - name: Resetting Devices to Undefined Container
       arista.cvp.cv_device_v3:
           devices: '{{CVP_DEVICES}}'
           state: provisioning_reset

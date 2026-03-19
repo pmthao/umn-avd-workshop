@@ -65,4 +65,3 @@ all: build-site-1 build-site-2 deploy-site-1 deploy-site-2
 .PHONY: reset_to_undefined
 reset_to_undefined: ## Reset devices to undefined container in CVP
 	ansible-playbook playbooks/reset_to_undefined.yml -i sites/AOC/inventory.yml
-	ansible-playbook playbooks/reset_to_undefined.yml -i sites/TelecomB/inventory.yml
