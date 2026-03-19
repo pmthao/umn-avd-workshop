@@ -10,3 +10,7 @@
         name: arista.avd.cv_deploy
       vars:
         cv_run_change_control: False
+        # Export token using 'export CV_TOKEN=<generated token here>'
+        # cv_token: "{{ lookup('env', 'CV_TOKEN') }}"
+        # cv_server: cvp
+        # cv_verify_certs: false
