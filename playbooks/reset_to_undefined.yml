@@ -5,18 +5,63 @@
 
   vars:
     CVP_DEVICES:
-      - fqdn: TelecomB-DB-1
+      - serialNumber: s1-core1
         parentContainerName: ""
-      - fqdn: TelecomB-DB-2
+      - serialNumber: s1-core2
         parentContainerName: ""
-      - fqdn: TelecomB-DL-1
+      - serialNumber: s1-brdr1
         parentContainerName: ""
-      - fqdn: TelecomB-DL-2
+      - serialNumber: s1-brdr2
         parentContainerName: ""
-      - fqdn: TelecomB-DS-1
+      - serialNumber: s1-leaf1
         parentContainerName: ""
-      - fqdn: TelecomB-DS-2
+      - serialNumber: s1-leaf2
         parentContainerName: ""
+      - serialNumber: s1-leaf3
+        parentContainerName: ""
+      - serialNumber: s1-leaf4
+        parentContainerName: ""
+      - serialNumber: s1-spine1
+        parentContainerName: ""
+      - serialNumber: s1-spine2
+        parentContainerName: ""
+      - serialNumber: s1-host1
+        parentContainerName: ""
+      - serialNumber: s1-host2
+        parentContainerName: ""
+      - serialNumber: s2-core1
+        parentContainerName: ""
+      - serialNumber: s2-core2
+        parentContainerName: ""
+      - serialNumber: s2-brdr1
+        parentContainerName: ""
+      - serialNumber: s2-brdr2
+        parentContainerName: ""
+      - serialNumber: s2-leaf1
+        parentContainerName: ""
+      - serialNumber: s2-leaf2
+        parentContainerName: ""
+      - serialNumber: s2-leaf3
+        parentContainerName: ""
+      - serialNumber: s2-leaf4
+        parentContainerName: ""
+      - serialNumber: s2-spine1
+        parentContainerName: ""
+      - serialNumber: s2-spine2
+        parentContainerName: ""
+      - serialNumber: s2-host1
+        parentContainerName: ""
+      - serialNumber: s2-host2
+        parentContainerName: ""
+
+      # - fqdn: TelecomB-DV-1
+      #   parentContainerName: ""
+      # - fqdn: TelecomB-DV-2
+      #   parentContainerName: ""
+      # - fqdn: TelecomB-HOST-1
+      #   parentContainerName: ""
+      # - fqdn: TelecomB-HOST-2
+      #   parentContainerName: ""
 
   tasks:
 

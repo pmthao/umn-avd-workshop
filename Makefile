@@ -15,7 +15,6 @@ AOC-build: ## Build Configs
 AOC-deploy: ## Deploy Configs via eAPI
 	ansible-playbook playbooks/deploy.yml -i sites/AOC/inventory.yml -e "target_hosts=AOC_FABRIC"
 
-
 .PHONY: AOC-CVP-deploy
 AOC-CVP-deploy: ## Deploy Configs via CloudVision Static Configuration Studio
 	ansible-playbook playbooks/cv_deploy.yml -i sites/AOC/inventory.yml -e "target_hosts=AOC_FABRIC"
@@ -28,16 +27,20 @@ AOC-validate: ## Validate network state
 # TelecomB
 ########################################################
 
-.PHONY: build-site-2
-build-site-2: ## Build Configs
+.PHONY: TelecomB-build
+TelecomB-build: ## Build Configs
 	ansible-playbook playbooks/build.yml -i sites/TelecomB/inventory.yml -e "target_hosts=TelecomB_FABRIC"
 
-.PHONY: cvp-site-2
-cvp-site-2: ## Deploy Configs via CloudVision Static Configuration Studio
+.PHONY: TelecomB-deploy
+TelecomB-deploy: ## Deploy Configs via eAPI
+	ansible-playbook playbooks/deploy.yml -i sites/TelecomB/inventory.yml -e "target_hosts=TelecomB_FABRIC"
+
+.PHONY: TelecomB-CVP-deploy
+TelecomB-CVP-deploy: ## Deploy Configs via CloudVision Static Configuration Studio
 	ansible-playbook playbooks/cv_deploy.yml -i sites/TelecomB/inventory.yml -e "target_hosts=TelecomB_FABRIC"
 
-.PHONY: validate-site-2
-validate-site-2: ## Validate network state
+.PHONY: TelecomB-validate
+TelecomB-validate: ## Validate network state
 	ansible-playbook playbooks/validate.yml -i sites/TelecomB/inventory.yml -e "target_hosts=TelecomB_FABRIC"
 
 ########################################################
