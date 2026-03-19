@@ -40,7 +40,39 @@ Follow the instructions on the [CloudVison documentation website](https://www.ar
 export CV_TOKEN=<insert token>
 ```
 
+## Build and Deploy AOC Fabric Configs
 
-## Lab Instructions
+```bash
+# Build AOC Fabric Configs
+make AOC-build
+
+# Deploy AOC Fabric Configs via CVP
+make AOC-CVP-deploy
+
+# Deploy AOC Fabric Configs via eAPI (direct to switches)
+make AOC-deploy
+
+# Validate AOC fabric
+make AOC-validate
+```
+
+## Build and Deploy TelecomB Fabric Configs
+
+```bash
+# Build TelecomB Fabric Configs
+make TelecomB-build
+
+# Deploy TelecomB Fabric Configs via CVP
+make TelecomB-CVP-deploy
+
+# Deploy TelecomB Fabric Configs via eAPI (direct to switches)
+make TelecomB-deploy
+
+# Validate TelecomB fabric
+make TelecomB-validate
+```
+
+
+## Follow the Lab Guide Instructions
 
 The instructions to build and deploy this L3LS Multi-site topology are located in the Lab Guide **[here](https://labguides.testdrive.arista.com/2025.3/automation/ci_avd_l3ls/overview/)**.
