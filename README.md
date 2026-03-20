@@ -113,3 +113,32 @@ l3_edge:
       interfaces: [ Ethernet5, Ethernet5 ]
       profile: AOC_to_TelecomB_profile
 ```
+
+## Hostname Mappings
+
+| Original Hostname | Lab Hostname      | Management0   |
+|-------------------|-------------------|---------------|
+| s1-brdr1          | AOC-DB-1          | 192.168.0.100 |
+| s1-brdr2          | AOC-DB-2          | 192.168.0.101 |
+| s1-core1          | AOC-CORE-1        | 192.168.0.102 |
+| s1-core2          | AOC-CORE-2        | 192.168.0.103 |
+| s1-host1          | AOC-HOST-1        | 192.168.0.16  |
+| s1-host2          | AOC-HOST-2        | 192.168.0.17  |
+| s1-leaf1          | AOC-DV-1          | 192.168.0.12  |
+| s1-leaf2          | AOC-DV-2          | 192.168.0.13  |
+| s1-leaf3          | AOC-DL-1          | 192.168.0.14  |
+| s1-leaf4          | AOC-DL-2          | 192.168.0.15  |
+| s1-spine1         | AOC-DS-1          | 192.168.0.10  |
+| s1-spine2         | AOC-DS-2          | 192.168.0.11  |
+| s2-brdr1          | TelecomB-DB-1     | 192.168.0.200 |
+| s2-brdr2          | TelecomB-DB-2     | 192.168.0.201 |
+| s2-core1          | TelecomB-CORE-1   | 192.168.0.202 |
+| s2-core2          | TelecomB-CORE-2   | 192.168.0.203 |
+| s2-host1          | TelecomB-HOST-1   | 192.168.0.26  |
+| s2-host2          | TelecomB-HOST-2   | 192.168.0.27  |
+| s2-leaf1          | TelecomB-DV-1     | 192.168.0.22  |
+| s2-leaf2          | TelecomB-DV-2     | 192.168.0.23  |
+| s2-leaf3          | TelecomB-DL-1     | 192.168.0.24  |
+| s2-leaf4          | TelecomB-DL-2     | 192.168.0.25  |
+| s2-spine1         | TelecomB-DS-1     | 192.168.0.20  |
+| s2-spine2         | TelecomB-DS-2     | 192.168.0.21  |
