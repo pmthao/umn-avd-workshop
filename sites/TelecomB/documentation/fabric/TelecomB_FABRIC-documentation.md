@@ -89,8 +89,8 @@
 | TelecomB_FABRIC | TelecomB-DB-2 | 10.250.2.6/32 |
 | TelecomB_FABRIC | TelecomB-DL-1 | 10.250.2.3/32 |
 | TelecomB_FABRIC | TelecomB-DL-2 | 10.250.2.4/32 |
-| TelecomB_FABRIC | TelecomB-DS-1 | 10.250.2.100/32 |
-| TelecomB_FABRIC | TelecomB-DS-2 | 10.250.2.101/32 |
+| TelecomB_FABRIC | TelecomB-DS-1 | 10.250.2.101/32 |
+| TelecomB_FABRIC | TelecomB-DS-2 | 10.250.2.102/32 |
 | TelecomB_FABRIC | TelecomB-DV-1 | 10.250.2.1/32 |
 | TelecomB_FABRIC | TelecomB-DV-2 | 10.250.2.2/32 |
 

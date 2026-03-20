@@ -29,6 +29,8 @@ servers:
         profile: PP-VLAN10                              # Port profile to apply (required)
         port_channel:
           mode: active
+        ethernet_segment:
+          short_esi: 0000:0000:aaaa
 
 # --------------------------------------------------------#
 # AOC RACK2 Endpoints
@@ -43,3 +45,5 @@ servers:
         profile: PP-VLAN20                              # Port profile to apply (required)
         port_channel:
           mode: active
+        ethernet_segment:
+          short_esi: 0000:0000:bbbb

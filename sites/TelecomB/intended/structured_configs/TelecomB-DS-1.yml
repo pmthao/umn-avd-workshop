@@ -97,7 +97,7 @@ loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
   shutdown: false
-  ip_address: 10.250.2.100/32
+  ip_address: 10.250.2.101/32
 management_api_http:
   enable_https: true
   enable_vrfs:
@@ -142,7 +142,7 @@ router_bfd:
     multiplier: 3
 router_bgp:
   as: '65200'
-  router_id: 10.250.2.100
+  router_id: 10.250.2.101
   maximum_paths:
     paths: 4
     ecmp: 4

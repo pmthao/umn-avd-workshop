@@ -321,7 +321,7 @@ interface Ethernet8
 
 | Interface | Description | VRF | IP Address |
 | --------- | ----------- | --- | ---------- |
-| Loopback0 | ROUTER_ID | default | 10.250.2.101/32 |
+| Loopback0 | ROUTER_ID | default | 10.250.2.102/32 |
 
 ##### IPv6
 
@@ -336,7 +336,7 @@ interface Ethernet8
 interface Loopback0
    description ROUTER_ID
    no shutdown
-   ip address 10.250.2.101/32
+   ip address 10.250.2.102/32
 ```
 
 ## Routing
@@ -397,7 +397,7 @@ ASN Notation: asplain
 
 | BGP AS | Router ID |
 | ------ | --------- |
-| 65200 | 10.250.2.101 |
+| 65200 | 10.250.2.102 |
 
 | BGP Tuning |
 | ---------- |
@@ -456,7 +456,7 @@ ASN Notation: asplain
 ```eos
 !
 router bgp 65200
-   router-id 10.250.2.101
+   router-id 10.250.2.102
    no bgp default ipv4-unicast
    maximum-paths 4 ecmp 4
    neighbor EVPN-OVERLAY-PEERS peer group

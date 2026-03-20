@@ -571,8 +571,8 @@ ASN Notation: asplain
 | Neighbor | Remote AS | VRF | Shutdown | Send-community | Maximum-routes | Allowas-in | BFD | RIB Pre-Policy Retain | Route-Reflector Client | Passive | TTL Max Hops |
 | -------- | --------- | --- | -------- | -------------- | -------------- | ---------- | --- | --------------------- | ---------------------- | ------- | ------------ |
 | 10.250.1.8 | 65103 | default | - | Inherited from peer group EVPN-OVERLAY-CORE | Inherited from peer group EVPN-OVERLAY-CORE | - | Inherited from peer group EVPN-OVERLAY-CORE | - | - | - | - |
-| 10.250.2.100 | 65200 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 10.250.2.101 | 65200 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
+| 10.250.2.102 | 65200 | default | - | Inherited from peer group EVPN-OVERLAY-PEERS | Inherited from peer group EVPN-OVERLAY-PEERS | - | Inherited from peer group EVPN-OVERLAY-PEERS | - | - | - | - |
 | 172.16.2.20 | 65200 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 | 172.16.2.22 | 65200 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
 | 172.16.255.2 | 65103 | default | - | Inherited from peer group IPv4-UNDERLAY-PEERS | Inherited from peer group IPv4-UNDERLAY-PEERS | - | - | - | - | - | - |
@@ -637,12 +637,12 @@ router bgp 65206
    neighbor 10.250.1.8 peer group EVPN-OVERLAY-CORE
    neighbor 10.250.1.8 remote-as 65103
    neighbor 10.250.1.8 description AOC-DB-2
-   neighbor 10.250.2.100 peer group EVPN-OVERLAY-PEERS
-   neighbor 10.250.2.100 remote-as 65200
-   neighbor 10.250.2.100 description TelecomB-DS-1_Loopback0
    neighbor 10.250.2.101 peer group EVPN-OVERLAY-PEERS
    neighbor 10.250.2.101 remote-as 65200
-   neighbor 10.250.2.101 description TelecomB-DS-2_Loopback0
+   neighbor 10.250.2.101 description TelecomB-DS-1_Loopback0
+   neighbor 10.250.2.102 peer group EVPN-OVERLAY-PEERS
+   neighbor 10.250.2.102 remote-as 65200
+   neighbor 10.250.2.102 description TelecomB-DS-2_Loopback0
    neighbor 172.16.2.20 peer group IPv4-UNDERLAY-PEERS
    neighbor 172.16.2.20 remote-as 65200
    neighbor 172.16.2.20 description TelecomB-DS-1_Ethernet8
