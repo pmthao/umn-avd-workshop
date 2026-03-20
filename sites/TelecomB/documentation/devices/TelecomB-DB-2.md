@@ -596,10 +596,8 @@ ASN Notation: asplain
 | Local Domain | 2:2 |
 | Remote Domain | 1:1 |
 | Remote Domain Peer Groups | EVPN-OVERLAY-CORE |
-| Local Domain: Ethernet-Segment Identifier | 000b:bbbb:bbbb:1111:1111 |
-| Local Domain: Ethernet-Segment import Route-Target | bb:bb:bb:11:11:11 |
-| Remote Domain: Ethernet-Segment Identifier | 000b:bbbb:bbbb:2222:2222 |
-| Remote Domain: Ethernet-Segment import Route-Target | bb:bb:bb:22:22:22 |
+| All Domain: Ethernet-Segment Identifier | 000b:bbbb:bbbb:1111:1111 |
+| All Domain: Ethernet-Segment import Route-Target | bb:bb:bb:11:11:11 |
 
 #### Router BGP VLANs
 
@@ -698,13 +696,9 @@ router bgp 65206
       domain identifier 1:1 remote
       route import match-failure action discard
       !
-      evpn ethernet-segment domain local
+      evpn ethernet-segment domain all
          identifier 000b:bbbb:bbbb:1111:1111
          route-target import bb:bb:bb:11:11:11
-      !
-      evpn ethernet-segment domain remote
-         identifier 000b:bbbb:bbbb:2222:2222
-         route-target import bb:bb:bb:22:22:22
    !
    address-family ipv4
       no neighbor EVPN-OVERLAY-CORE activate
