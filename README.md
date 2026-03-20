@@ -4,7 +4,7 @@
 
 The ATD lab is used to create the L3LS EVPN/VXLAN Dual Data Center topology below.
 
-![Topologies](images/UMN-ATD-Topology.png)
+![Topologies](images/UMN-ATD-Topology-AA-Multihoming.png)
 
 ## Lap Prep - Customized for UoMN Workshop
 
