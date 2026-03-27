@@ -66,17 +66,17 @@ l3leaf:
           id: 5
           mgmt_ip: 192.168.0.100/24
           uplink_switch_interfaces: [ Ethernet7, Ethernet7 ]
-          evpn_gateway:
-            remote_peers:
-              - hostname: TelecomB-DB-1
-                bgp_as: 65203
-                ip_address: 10.250.2.7
+          # evpn_gateway:
+          #   remote_peers:
+          #     - hostname: TelecomB-DB-1
+          #       bgp_as: 65203
+          #       ip_address: 10.250.2.7
         - name: AOC-DB-2
           id: 6
           mgmt_ip: 192.168.0.101/24
           uplink_switch_interfaces: [ Ethernet8, Ethernet8 ]
-          evpn_gateway:
-            remote_peers:
-              - hostname: TelecomB-DB-2
-                bgp_as: 65203
-                ip_address: 10.250.2.8
+          # evpn_gateway:
+          #   remote_peers:
+          #     - hostname: TelecomB-DB-2
+          #       bgp_as: 65203
+          #       ip_address: 10.250.2.8
