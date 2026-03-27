@@ -30,7 +30,7 @@ make reset_to_undefined
 make preplab
 ```
 
-**STEP #4** - (*Optional*) - Export CVP Service Account token to env variable CV_TOKEN
+**STEP #4** - Export CVP Service Account token to env variable CV_TOKEN
 
 If you wish to push configuration to nodes with CVP, you will need to create a Service Account Token and insert it below.
 
