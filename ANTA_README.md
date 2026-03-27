@@ -54,3 +54,30 @@ anta nrfu -u arista -p <insert lab password> -i sites/AOC/anta_inventory.yml -c 
 # single test
 anta nrfu -u arista -p <insert lab password> -i sites/AOC/anta_inventory.yml -c tests/all.yml  --test VerifyNTP
 ```
+
+## Other commands
+
+```bash
+# Validate a check
+anta check catalog -c tests/static_test_catalog.yml 
+
+# Single Device
+anta nrfu --device DC1-LEAF1A [text|json|table|tpl-report]
+
+# Group by results
+anta nrfu table --group-by [device|test]
+
+# Run a single test
+anta nrfu --test VerifyCPUUtilization table
+
+
+# Run a single test, show everything skipped or failed
+anta nrfu --test VerifyCPUUtilization --hide success table
+
+# snapshots - Execute list of commands per device and store the output 
+anta exec snapshot --commands-list network-tests/snapshot.yml
+
+# debug - run commands on a device
+anta debug run-cmd -u arista -p <insert lab password> -i sites/AOC/anta_inventory.yml --device AOC-DB-1 --command "show version"
+anta debug run-cmd -u arista -p <insert lab password> -i sites/AOC/anta_inventory.yml --device AOC-DB-1 --command "show interfaces status" --ofmt text
+```
