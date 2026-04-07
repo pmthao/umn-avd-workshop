@@ -65,7 +65,7 @@ Follow the instructions on the [CloudVison documentation website](https://www.ar
 export CV_TOKEN=<insert token>
 ```
 
-## Follow the Lab Guide Instructions
+## Follow the ATD Lab Guide Instructions
 
 Go back to [Lab Guide](https://labguides.testdrive.arista.com/2025.3/automation/ci_avd_l3ls/day0/#step-1-prepare-lab-environment) - Step 2 - Deployment Overview
 
